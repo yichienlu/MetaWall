@@ -1,6 +1,8 @@
-# Nuxt 3 Minimal Starter
+# MetaWall
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+design:
+https://xd.adobe.com/view/c0763dbe-fc15-42e8-be0b-8956ed03e675-9525/grid
+
 
 ## Setup
 
