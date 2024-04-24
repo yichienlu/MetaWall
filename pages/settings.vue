@@ -1,6 +1,6 @@
 <script setup>
 const nameTab = ref(true)
-const toggleTab = () => { nameTab.value = !nameTab.value }
+// const toggleTab = () => { nameTab.value = !nameTab.value }
 </script>
 <template>
   <div>
@@ -11,9 +11,9 @@ const toggleTab = () => { nameTab.value = !nameTab.value }
     <div class="mt-8">
       <div class="flex pl-4">
         <button class="px-6 py-2 rounded-t-lg bg-white border-2 border-b-0 border-dark"
-          :class="{ 'bg-dark text-white': nameTab }" @click="toggleTab">暱稱修改</button>
+          :class="{ 'bg-dark text-white': nameTab }" @click="nameTab=true">暱稱修改</button>
         <button class="px-6 py-2 rounded-t-lg bg-white border-2 border-b-0 border-dark"
-          :class="{ 'bg-dark text-white': !nameTab }" @click="toggleTab">重設密碼</button>
+          :class="{ 'bg-dark text-white': !nameTab }" @click="nameTab=false">重設密碼</button>
       </div>
       <div class="py-8 px-4 bg-white rounded-lg border-2 border-dark">
         <div v-if="nameTab" class="max-w-[323px] w-full mx-auto flex flex-col items-center gap-4">
