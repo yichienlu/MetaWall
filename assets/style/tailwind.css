@@ -5,10 +5,13 @@
 @tailwind utilities;
 
 body {
-  font-family: "Paytone One","Noto Sans TC", sans-serif;
+  font-family: "Noto Sans TC", sans-serif;
   font-weight: 400;
   color: theme('colors.dark')
 }
+.paytone {
+  font-family: "Paytone One","Noto Sans TC", sans-serif;
+}
 *{
-  outline: 1px solid #F50
+  /* outline: 1px solid #F50 */
 }

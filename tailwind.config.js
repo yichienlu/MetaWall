@@ -11,7 +11,10 @@ export default {
         'light-gray':'',
         'danger':'#F57375',
         'background':'#EFECE7',
-        'background-grid':'#00040029'
+        'background-grid':'#70707050'
+      },
+      fontSize: {
+        12: '0.75rem',
       }
     },
     container: {
