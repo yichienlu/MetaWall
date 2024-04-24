@@ -5,7 +5,7 @@
     </div>
     <ul class="mt-4 flex flex-col gap-4">
       <li class="flex gap-4 items-center p-4 bg-white rounded-lg border-2 border-dark border-b-4">
-        <img src="https://randomuser.me/api/portraits/men/15.jpg" alt="" class="w-10 h-10 rounded-full">
+        <img src="https://randomuser.me/api/portraits/men/15.jpg" alt="" class="object-cover w-10 h-10 rounded-full">
         <div class="grow">
           <NuxtLink to="wall" class="bolck font-bold hover:text-primary hover:underline hover:underline-offset-2">愛爾敏</NuxtLink>
           <div class="flex justify-between text-sm flex-col sm:flex-row">

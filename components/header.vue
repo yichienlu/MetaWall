@@ -11,7 +11,7 @@
       <NuxtLink to="/" class="text-2xl sm:text-3xl flex items-center paytone">MetaWall</NuxtLink>
       <div class="relative ">
         <button class="flex py-3" @click="toggleList">
-          <img src="https://randomuser.me/api/portraits/men/15.jpg" alt="" class="h-[30px] w-[30px] rounded-full border-2 border-black mr-2">
+          <img src="https://randomuser.me/api/portraits/men/15.jpg" alt="" class="object-cover h-[30px] w-[30px] rounded-full border-2 border-black mr-2">
           <div class="p-1 border-b-2 border-dark text-base leading-5 paytone">Member</div>
         </button>
         <div class="absolute w-[182px] right-0 top-100 bg-white border-2 border-dark z-50" :class="{'hidden':!listOpen}">
