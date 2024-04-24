@@ -12,11 +12,11 @@
           <h2 class="bolck hover:text-primary">愛爾敏</h2>
           <div class="text-dark-gray text-sm font-normal">發文時間：2022/1/10 12:00</div>
         </div>
-        <button class="block mr-9 ml-auto">
+        <button class="block sm:mr-9 ml-auto">
           <Icon name="material-symbols:thumb-up-outline" class="w-6 h-6 text-primary" />
           <p>取消</p>
         </button>
-        <button class="block mr-9 ">
+        <button class="block sm:mr-9 ">
           <Icon name="icons8:right-round" class="w-6 h-6 text-primary" />
           <p>查看</p>
         </button>
