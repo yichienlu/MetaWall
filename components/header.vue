@@ -17,12 +17,12 @@
         <div class="absolute w-[182px] right-0 top-100 bg-white border-2 border-dark z-50" :class="{'hidden':!listOpen}">
           <ul class="relative right-2 bottom-2 bg-white border-2 border-dark text-center">
             <li class="border-b-2 border-dark py-2 hover:bg-background">
-              <NuxtLink to="/wall">我的貼文牆</NuxtLink>
+              <NuxtLink to="/wall" @click="toggleList">我的貼文牆</NuxtLink>
             </li>
             <li class="border-b-2 border-dark py-2 hover:bg-background">
-              <NuxtLink to="/settings">修改個人資料</NuxtLink>
+              <NuxtLink to="/settings" @click="toggleList">修改個人資料</NuxtLink>
             </li>
-            <li class="py-2 hover:bg-background"><button>登出</button></li>
+            <li class="py-2 hover:bg-background" @click="toggleList"><button>登出</button></li>
           </ul>
         </div>
       </div>
