@@ -13,7 +13,11 @@ export default {
         'background':'#EFECE7',
         'background-grid':'#00040029'
       }
-    }
+    },
+    container: {
+      center: true,
+    },
+    
   },
 
 

@@ -1,6 +1,5 @@
 <template>
   <div>
-    4 - 追蹤名單
     
   </div>
 </template>
