@@ -22,7 +22,7 @@
     <div class="flex items-center gap-2 mt-4">
       <img src="https://randomuser.me/api/portraits/men/15.jpg" alt="" class="w-10 h-10 rounded-full border-2 border-dark">
       <div class="flex grow border-2 border-dark">
-        <input type="text" class="grow">
+        <input type="text" class="grow px-4" placeholder="留言">
         <button class="px-12 bg-primary border-l-2 border-dark text-white h-10">留言</button>
       </div>
     </div>
