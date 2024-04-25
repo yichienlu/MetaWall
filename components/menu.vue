@@ -1,11 +1,11 @@
 <template>
   <div class=" w-full px-2 md:px-0 font-bold">
     <div class="flex md:flex-col justify-center  py-2 bg-background md:bg-white rounded-full md:rounded-none border-2 border-dark gap-6 md:px-6 md:py-8">
-      <NuxtLink to="/wall" class="flex items-center gap-4 md:px-2 md:order-2">
+      <NuxtLink to="/wall/123" class="flex items-center gap-4 md:px-2 md:order-2">
         <span class="flex justify-center items-center h-12 w-12 rounded-full border-2 border-dark bg-cover bg-center" style="background-image:url('https://randomuser.me/api/portraits/men/15.jpg')"></span>
         <span class="hidden md:block">邊緣小杰</span>
       </NuxtLink>
-      <NuxtLink to="following" class="flex items-center gap-4 md:px-2 md:order-3">
+      <NuxtLink to="/following" class="flex items-center gap-4 md:px-2 md:order-3">
         <span class="flex justify-center items-center h-12 w-12 rounded-full border-2 border-dark bg-white"><Icon name="uil:bell" class="w-6 h-6 " /></span>
         <span class="hidden md:block">追蹤名單</span>
       </NuxtLink>

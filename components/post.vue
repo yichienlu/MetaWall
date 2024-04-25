@@ -14,7 +14,7 @@
       <p>外面看起來就超冷....</p>
       <p>我決定回被窩繼續睡....>.<</p>
     </div>
-    <img src="https://picsum.photos/500/300" alt="" class="mt-4 rounded-lg border-2 border-dark">
+    <img src="https://picsum.photos/500/300" alt="" class="max-w-full mt-4 rounded-lg border-2 border-dark">
     <div class="flex mt-4">
       <button><Icon name="material-symbols:thumb-up-outline" class="w-6 h-6 " /></button>
       <span class="ml-2">12</span>
