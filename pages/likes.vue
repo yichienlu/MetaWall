@@ -16,10 +16,12 @@
           <Icon name="material-symbols:thumb-up-outline" class="w-6 h-6 text-primary" />
           <p>取消</p>
         </button>
-        <button class="block sm:mr-9 ">
-          <Icon name="icons8:right-round" class="w-6 h-6 text-primary" />
-          <p>查看</p>
-        </button>
+        <NuxtLink to="/wall/123">
+          <button class="block sm:mr-9 ">
+            <Icon name="icons8:right-round" class="w-6 h-6 text-primary" />
+            <p>查看</p>
+          </button>
+        </NuxtLink>
       </li>
       
     </ul>

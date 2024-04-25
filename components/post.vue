@@ -4,9 +4,11 @@
 <template>
   <div class="bg-white rounded-lg p-6 border-2 border-dark shadow-[0_3px_0_0_#000400]">
     <div class="flex">
-      <img src="https://randomuser.me/api/portraits/men/15.jpg" alt="" class="w-12 h-12 rounded-full mr-4 border-2 border-dark">
+      <NuxtLink to="/wall/123">
+        <img src="https://randomuser.me/api/portraits/men/15.jpg" alt="" class="w-12 h-12 rounded-full mr-4 border-2 border-dark hover:border-primary">
+      </NuxtLink>
       <div>
-        <div class="font-bold">邊緣小杰</div>
+        <NuxtLink to="/wall/123" class="block font-bold hover:text-primary">邊緣小杰</NuxtLink>
         <div class="text-12 text-dark-gray">2022/10/10 12:00</div>
       </div>
     </div>
@@ -20,10 +22,10 @@
       <span class="ml-2">12</span>
     </div>
     <div class="flex items-center gap-2 mt-4">
-      <img src="https://images.unsplash.com/photo-1554629947-334ff61d85dc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8" alt="" class="object-cover w-10 h-10 rounded-full border-2 border-dark">
+      <img src="https://images.unsplash.com/photo-1554629947-334ff61d85dc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8" alt="" class="hidden md:block object-cover w-10 h-10 rounded-full border-2 border-dark">
       <div class="flex grow border-2 border-dark">
-        <input type="text" class="grow px-4" placeholder="留言">
-        <button class="px-12 bg-primary border-l-2 border-dark text-white h-10">留言</button>
+        <input type="text" class="grow shrink px-4 w-3/4" placeholder="留言">
+        <button class="w-1/4 px-3 sm:px-6 lg:px-12 btn-input h-10 shrink">留言</button>
       </div>
     </div>
     <ul class="mt-4 flex flex-col gap-4">

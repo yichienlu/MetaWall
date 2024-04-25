@@ -22,3 +22,21 @@ body {
 /* *{
   outline: 1px solid #F50
 } */
+
+.btn-3d {
+  @apply py-4 font-bold bg-primary hover:bg-bright hover:text-dark text-white border-2 border-dark rounded-lg shadow-[-2px_2px_0px_0px_#000400] active:shadow-none active:-translate-x-0.5 active:translate-y-0.5
+  disabled:bg-secondary disabled:text-white disabled:rounded-lg disabled:border-2 disabled:border-[#808080] disabled:shadow-[#808080]
+}
+.btn-3d-bright {
+  @apply font-bold hover:bg-primary bg-bright text-dark hover:text-white border-2 border-dark rounded-lg shadow-[0_2px_0px_0px_#000400] active:shadow-none  active:translate-y-0.5
+}
+.btn-3d-gray {
+  @apply font-bold bg-background hover:bg-bright text-dark border-2 border-dark rounded-lg shadow-[0_2px_0px_0px_#000400] active:shadow-none  active:translate-y-0.5
+}
+
+.btn-2d-dark {
+  @apply bg-dark hover:bg-bright active:bg-background border-2 border-dark text-white hover:text-dark font-bold
+}
+.btn-input {
+  @apply bg-primary hover:bg-bright text-white hover:text-dark border-l-2 border-dark
+}
