@@ -13,11 +13,11 @@ let liked = ref(false)
 <template>
   <div class="bg-white rounded-lg p-6 border-2 border-dark shadow-[0_3px_0_0_#000400]">
     <div class="flex">
-      <NuxtLink to="/wall/123">
+      <NuxtLink :to="`/wall/${post.userId}`">
         <img :src="post.userImg" alt="" class="object-cover w-12 h-12 rounded-full mr-4 border-2 border-dark hover:border-primary">
       </NuxtLink>
       <div>
-        <NuxtLink to="/wall/123" class="font-bold hover:text-primary">{{ post.name }}</NuxtLink>
+        <NuxtLink :to="`/wall/${post.userId}`" class="font-bold hover:text-primary">{{ post.name }}</NuxtLink>
         <div class="text-12 text-dark-gray" v-timeformat="post.createdAt*1000"></div>
       </div>
     </div>
@@ -35,15 +35,15 @@ let liked = ref(false)
         <button class="w-1/4 px-3 sm:px-6 lg:px-12 btn-input h-10 shrink">留言</button>
       </div>
     </div>
-    <ul class="mt-4 flex flex-col gap-4" v-for="comment in post.comments" :key="comment.id">
+    <ul class="mt-4 flex flex-col gap-4" v-for="comment in post.comments" :key="comment?.id">
       <li class="p-4 rounded-xl bg-background flex gap-3">
-        <NuxtLink to="/wall/123">
-          <img :src="comment.userImg" alt="" class="object-cover w-10 h-10 rounded-full border-2 border-dark hover:border-primary">
+        <NuxtLink :to="`/wall/${comment?.userId}`">
+          <img :src="comment?.userImg" alt="" class="object-cover w-10 h-10 rounded-full border-2 border-dark hover:border-primary">
         </NuxtLink>
         <div>
-            <NuxtLink to="/wall/123" class="hover:text-primary">{{ comment.name }}</NuxtLink>
-          <div class="text-12 text-dark-gray" v-timeformat="comment.createdAt*1000"></div>
-          <div class="mt-1">{{ comment.comment }}</div>
+            <NuxtLink :to="`/wall/${comment?.userId}`" class="hover:text-primary">{{ comment?.name }}</NuxtLink>
+          <div class="text-12 text-dark-gray" v-timeformat="comment?.createdAt*1000"></div>
+          <div class="mt-1">{{ comment?.comment }}</div>
         </div>
       </li>
     </ul>

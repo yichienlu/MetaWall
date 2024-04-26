@@ -1,6 +1,16 @@
 <script setup>
 const nameTab = ref(true)
-// const toggleTab = () => { nameTab.value = !nameTab.value }
+
+const user = {
+  id:'123',
+  userImg:"https://images.unsplash.com/photo-1554629947-334ff61d85dc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8",
+  name:"山",
+  gender:1,
+  email:"",
+  password:""
+}
+
+
 </script>
 <template>
   <div>
@@ -17,13 +27,12 @@ const nameTab = ref(true)
       </div>
       <div class="py-8 px-4 bg-white rounded-lg border-2 border-dark">
         <div v-if="nameTab" class="max-w-[323px] w-full mx-auto flex flex-col items-center gap-4">
-          <img src="https://images.unsplash.com/photo-1554629947-334ff61d85dc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8" alt="" class="object-cover  w-28 h-28 rounded-full border-2 border-dark">
-
+          <img :src="user.userImg" alt="" class="object-cover  w-28 h-28 rounded-full border-2 border-dark">
           <button class="py-2 px-6 btn-2d-dark">上傳大頭照</button>
 
           <div class="w-full">
             <label for="" class="mb-1">暱稱</label>
-            <input type="text" placeholder="請輸入暱稱" class="w-full h-12 px-6 border-2 border-dark">
+            <input type="text" placeholder="請輸入暱稱" class="w-full h-12 px-6 border-2 border-dark" v-model="user.name">
           </div>
 
           <div class="w-full">

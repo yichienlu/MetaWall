@@ -14,6 +14,7 @@
         {
           id:"456",
           userImg:"https://picsum.photos/100/200",
+          userId:"456",
           name:"希琳",
           createdAt:1700000000,
           comment:"真的～我已經準備冬眠了"
@@ -21,6 +22,7 @@
         {
           id:"789",
           userImg:"https://randomuser.me/api/portraits/men/1.jpg",
+          userId:"789",
           name:"波吉",
           createdAt:1700000000,
           comment:"會嗎？我沒穿衣服都不覺得冷"
@@ -28,30 +30,16 @@
       ]
     },
     {
-      id:"123",
-      userId:"123",
-      name:"邊緣小杰",
-      userImg:"https://randomuser.me/api/portraits/men/15.jpg",
-      createdAt:1700000000,
-      content:"<p>超冷</p>",
-      postImg:"https://picsum.photos/300/300",
+      id:"000",
+      userId:"000",
+      name:"米卡莎",
+      userImg:"https://randomuser.me/api/portraits/women/15.jpg",
+      createdAt:1700090000,
+      content:"<p>搶到想要的 NFT 啦！ya~~</p>",
+      postImg:"https://picsum.photos/400/300",
       likes:0,
       liked:false,
       comments:[
-        {
-          id:"456",
-          userImg:"https://picsum.photos/200/100",
-          name:"琳希",
-          createdAt:1700000000,
-          comment:"真的～"
-        },
-        {
-          id:"789",
-          userImg:"https://randomuser.me/api/portraits/men/18.jpg",
-          name:"吉波",
-          createdAt:1700000000,
-          comment:"會嗎？"
-        }
       ]
     }
   ]

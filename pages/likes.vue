@@ -1,3 +1,14 @@
+<script setup>
+  const likes = [
+    {
+      id:"123",
+      userId:"123",
+      name:"邊緣小杰",
+      userImg:"https://randomuser.me/api/portraits/men/15.jpg",
+      postTime:1720000000
+    }
+  ]
+</script>
 <template>
   <div>
     <div>
@@ -6,17 +17,19 @@
       </div>
     </div>
     <ul class="mt-4 flex flex-col gap-4">
-      <li class="flex gap-4 items-center p-4 bg-white rounded-lg border-2 border-dark border-b-4 font-bold">
-        <img src="https://randomuser.me/api/portraits/men/15.jpg" alt="" class="object-cover w-10 h-10 rounded-full">
+      <li class="flex gap-4 items-center p-4 bg-white rounded-lg border-2 border-dark border-b-4 font-bold" v-for="like in likes" :key="like.id">
+        <NuxtLink :to="`/wall/${like.userId}`">
+          <img :src="like.userImg" alt="" class="object-cover w-10 h-10 rounded-full">
+        </NuxtLink>
         <div class="grow">
-          <h2 class="bolck hover:text-primary">愛爾敏</h2>
-          <div class="text-dark-gray text-sm font-normal">發文時間：2022/1/10 12:00</div>
+          <NuxtLink :to="`/wall/${like.userId}`" class="hover:text-primary">{{ like.name }}</NuxtLink>
+          <div class="text-dark-gray text-sm font-normal">發文時間：<span v-timeformat="like.postTime*1000"></span></div>
         </div>
         <button class="block sm:mr-9 ml-auto">
           <Icon name="material-symbols:thumb-up-outline" class="w-6 h-6 text-primary" />
           <p>取消</p>
         </button>
-        <NuxtLink to="/wall/123">
+        <NuxtLink :to="`/post/${like.id}`">
           <button class="block sm:mr-9 ">
             <Icon name="icons8:right-round" class="w-6 h-6 text-primary" />
             <p>查看</p>
