@@ -3,7 +3,8 @@ export default defineNuxtConfig({
   // devtools: { enabled: true },
   modules: [
     '@nuxtjs/tailwindcss',
-    'nuxt-icon'
+    'nuxt-icon',
+    'dayjs-nuxt'
   ],
 
   css: ["~/assets/style/main.css"],
