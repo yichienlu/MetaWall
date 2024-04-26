@@ -28,6 +28,10 @@ const post = {
     }
   ]
 }
+
+useHead({
+    title: `${post.name}`
+  })
 </script>
 
 <template>

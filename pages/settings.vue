@@ -1,15 +1,18 @@
 <script setup>
+  useHead({
+    title: "修改個人資料"
+  })
 const nameTab = ref(true)
 
-const user = {
+const user = ref({
   id:'123',
   userImg:"https://images.unsplash.com/photo-1554629947-334ff61d85dc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8",
-  name:"山",
-  gender:1,
+  name:"玉山",
+  gender:"",
   email:"",
   password:""
-}
-
+})
+const picked = ref('One')
 
 </script>
 <template>
@@ -38,12 +41,25 @@ const user = {
           <div class="w-full">
             <legend>性別</legend>
             <div class="flex items-center">
-              <input type="radio" id="male" name="gender" class="appearance-none" checked />
-              <Icon name="ic:baseline-radio-button-checked" class="text-dark w-6 h-6"></Icon>
-              <label for="male" class="ml-3 mr-6">男性</label>
-              <input type="radio" id="female" name="gender" class="appearance-none" />
-              <Icon name="ic:baseline-radio-button-unchecked" class="text-dark w-6 h-6"></Icon>
-              <label for="female" class="ml-3 mr-6">女性</label>
+              <input type="radio" id="male" name="gender" value="male" class="appearance-none" v-model="user.gender" />
+              <label for="male" class="mr-6">
+                <span v-if="user.gender=='male'">
+                  <Icon name="ic:baseline-radio-button-checked" class="text-dark w-6 h-6"></Icon>
+                </span>
+                <span v-else>
+                  <Icon name="ic:baseline-radio-button-unchecked" class="text-dark w-6 h-6"></Icon>
+                </span>
+                男性</label>
+              <input type="radio" id="female" name="gender" value="female" class="appearance-none" v-model="user.gender" />
+              <label for="female" class="mr-6 ">
+                <span v-if="user.gender=='female'">
+                  <Icon name="ic:baseline-radio-button-checked" class="text-dark w-6 h-6"></Icon>
+                </span>
+                <span v-else>
+                  <Icon name="ic:baseline-radio-button-unchecked" class="text-dark w-6 h-6"></Icon>
+                </span>
+                女性
+              </label>
             </div>
           </div>
 

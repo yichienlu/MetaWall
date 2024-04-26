@@ -1,3 +1,8 @@
+<script>
+  useHead({
+    title: "張貼動態"
+  })
+</script>
 <template>
   <div>
     <!-- <Titlebox /> -->

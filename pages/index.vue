@@ -2,6 +2,9 @@
 definePageMeta({
   layout: 'login'
 })
+useHead({
+    title: "登入"
+  })
 const login = ref(true)
 </script>
 

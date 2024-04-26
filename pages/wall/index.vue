@@ -1,4 +1,7 @@
 <script setup>
+  useHead({
+    title:"貼文牆"
+  })
   const posts = [
   {
       id:"123",

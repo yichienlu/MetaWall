@@ -1,4 +1,7 @@
 <script setup>
+  useHead({
+    title: "追蹤名單"
+  })
 const following = [
   {
     id:"123",

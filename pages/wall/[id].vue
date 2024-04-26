@@ -1,4 +1,5 @@
 <script setup>
+
 const profile = {
   id:"123",
   name:"邊緣小杰",
@@ -37,6 +38,10 @@ const profile = {
     }
   ]
 }
+
+useHead({
+    title: `${profile.name}`
+  })
 </script>
 
 <template>

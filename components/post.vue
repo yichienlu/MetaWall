@@ -18,7 +18,9 @@ let liked = ref(false)
       </NuxtLink>
       <div>
         <NuxtLink :to="`/wall/${post.userId}`" class="font-bold hover:text-primary">{{ post.name }}</NuxtLink>
-        <div class="text-12 text-dark-gray" v-timeformat="post.createdAt*1000"></div>
+        <NuxtLink :to="`/post/${post.id}`">
+          <div class="text-12 text-dark-gray hover:underline" v-timeformat="post.createdAt*1000"></div>
+        </NuxtLink>
       </div>
     </div>
     <div class="mt-4" v-html="post.content"></div>

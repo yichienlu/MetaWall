@@ -1,4 +1,7 @@
 <script setup>
+  useHead({
+    title: "我按讚的貼文"
+  })
   const likes = [
     {
       id:"123",
