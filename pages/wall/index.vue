@@ -11,7 +11,28 @@
       createdAt:1700000000,
       content:"<p>外面看起來就超冷....</p><p>我決定回被窩繼續睡....</p>",
       postImg:"https://picsum.photos/500/300",
-      likes:12,
+      likes:[
+        {userId:123,name:'邊緣小杰'},
+        {userId:123,name:'邊緣小杰'},
+        {userId:123,name:'邊緣小杰'},
+        {userId:123,name:'邊緣小杰'},
+        {userId:123,name:'邊緣小杰'},
+        {userId:123,name:'邊緣小杰'},
+        {userId:123,name:'邊緣小杰'},
+        {userId:123,name:'邊緣小杰'},
+        {userId:123,name:'邊緣小杰'},
+        {userId:123,name:'邊緣小杰'},
+        {userId:123,name:'邊緣小杰'},
+        {userId:123,name:'邊緣小杰'},
+        {userId:123,name:'邊緣小杰'},
+        {userId:123,name:'邊緣小杰'},
+        {userId:123,name:'邊緣小杰'},
+        {userId:123,name:'邊緣小杰'},
+        {userId:123,name:'邊緣小杰'},
+        {userId:123,name:'邊緣小杰'},
+        {userId:123,name:'邊緣小杰'},
+        {userId:123,name:'邊緣小杰'},
+      ],
       liked:true,
       comments:[
         {
@@ -40,7 +61,7 @@
       createdAt:1700090000,
       content:"<p>搶到想要的 NFT 啦！ya~~</p>",
       postImg:"https://picsum.photos/400/300",
-      likes:0,
+      likes:[],
       liked:false,
       comments:[
       ]

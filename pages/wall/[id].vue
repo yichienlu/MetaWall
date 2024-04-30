@@ -15,7 +15,20 @@ const profile = {
       createdAt:1700000000,
       content:"<p>外面看起來就超冷....</p><p>我決定回被窩繼續睡....</p>",
       postImg:"https://picsum.photos/500/300",
-      likes:12,
+      likes:[
+        {userId:123,name:'邊緣小杰邊緣小杰邊緣小杰邊緣小杰邊緣小杰邊緣小杰邊緣小杰邊緣小杰邊緣小杰邊緣小杰邊緣小杰邊緣小杰邊緣小杰'},
+        {userId:123,name:'邊緣小杰'},
+        {userId:123,name:'邊緣小杰'},
+        {userId:123,name:'邊緣小杰'},
+        {userId:123,name:'邊緣小杰'},
+        {userId:123,name:'邊緣小杰'},
+        {userId:123,name:'邊緣小杰'},
+        {userId:123,name:'邊緣小杰'},
+        {userId:123,name:'邊緣小杰'},
+        {userId:123,name:'邊緣小杰'},
+        {userId:123,name:'邊緣小杰'},
+        {userId:123,name:'邊緣小杰'}
+      ],
       liked:true,
       comments:[
         {
