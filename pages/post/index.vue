@@ -44,7 +44,7 @@ const addPost = async () => {
         <li v-if="!tempPost.image.startsWith('https://')">圖片網址須為 https 開頭</li>
       </ul>
       <div>
-        <button class="w-[323px] btn-3d block mx-auto " @click="addPost">送出貼文</button>
+        <button class="w-[323px] btn-3d block mx-auto " @click="addPost" :disabled="!tempPost.content || !tempPost.image.startsWith('https://') ">送出貼文</button>
       </div>
     </div>
   </div>
