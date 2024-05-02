@@ -15,8 +15,16 @@ const addPost = async () => {
     method: 'post',
     body: tempPost.value
   })
-  .then((res)=>console.log(res))
-  .catch((err)=>console.dir(err))
+  .then((res)=>{
+    alert(res.message)
+    tempPost.value = {
+      user:"66332fd014aa392dbd88be87",
+      content:"",
+      image:"",
+      likes:0
+    }
+  })
+  .catch((err)=>{console.dir(err)})
 }
 
 
