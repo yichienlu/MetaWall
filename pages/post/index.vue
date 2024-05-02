@@ -41,10 +41,10 @@ const addPost = async () => {
       <div class="mb-8" v-if="tempPost.image"><img  :src="tempPost.image" alt="" class="rounded-lg border-2 border-dark"></div>
       <ul class="mb-4 text-center text-danger text-sm">
         <!-- <li v-for="item in alerts" :key="item">{{ item }}</li> -->
-        <li v-if="!tempPost.image.startsWith('https://')">圖片網址須為 https 開頭</li>
+        <li v-if="tempPost.image && !tempPost.image.startsWith('https://')">圖片網址須為 https 開頭</li>
       </ul>
       <div>
-        <button class="w-[323px] btn-3d block mx-auto " @click="addPost" :disabled="!tempPost.content || !tempPost.image.startsWith('https://') ">送出貼文</button>
+        <button class="w-[323px] btn-3d block mx-auto " @click="addPost" :disabled="!((tempPost.content && !tempPost.image) || (tempPost.content && tempPost.image.startsWith('https://')))">送出貼文</button>
       </div>
     </div>
   </div>
