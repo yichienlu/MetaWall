@@ -40,14 +40,16 @@ watchEffect(() => post)
         </div>
       </div> -->
     </div>
-    <div class="flex items-center gap-2 mt-4">
+    
+    <!-- <div class="flex items-center gap-2 mt-4">
       <img :src="post.userImg" alt="" class="hidden md:block object-cover w-10 h-10 rounded-full border-2 border-dark">
       <div class="flex grow border-2 border-dark">
         <input type="text" class="grow shrink px-4 w-3/4" placeholder="留言">
         <button class="w-1/4 px-3 sm:px-6 lg:px-12 btn-input h-10 shrink">留言</button>
       </div>
-    </div>
-    <ul class="mt-4 flex flex-col gap-4" v-for="comment in post.comments" :key="comment?.id">
+    </div> -->
+
+    <!-- <ul class="mt-4 flex flex-col gap-4" v-for="comment in post.comments" :key="comment?.id">
       <li class="p-4 rounded-xl bg-background flex gap-3">
         <NuxtLink :to="`/wall/${comment?.userId}`">
           <img :src="comment?.userImg" alt="" class="object-cover w-10 h-10 rounded-full border-2 border-dark hover:border-primary">
@@ -58,6 +60,6 @@ watchEffect(() => post)
           <div class="mt-1">{{ comment?.comment }}</div>
         </div>
       </li>
-    </ul>
+    </ul> -->
   </div>
 </template>

@@ -7,16 +7,16 @@ const posts = ref([])
 
 
   const sortList = async (arr) =>{
-    useFetch(`https://node-hw4.onrender.com/posts/?timeSort=${arr[0]}&q=${arr[1]}`)
+    await $fetch(`https://node-hw4.onrender.com/posts/?timeSort=${arr[0]}&q=${arr[1]}`, {method: 'get'})
       .then(res=>{
-        posts.value = res.data.value.data
+        posts.value = res.data
       })
   }
 
 </script>
 <template>
   <div>
-    <Searchbar @test="test" @sortList="sortList" />
+    <Searchbar @sortList="sortList" />
     <ul v-if="posts.length" class="mt-4 flex flex-col gap-4">
       <li v-for="post in posts" :key="post._id">
         <Post :post="post" />
