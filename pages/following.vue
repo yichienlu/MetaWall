@@ -32,7 +32,7 @@ const following = [
       <li class="flex gap-4 items-center p-4 bg-white rounded-lg border-2 border-dark border-b-4" v-for="user in following" :key="user.id">
         <img :src="user.userImg" alt="" class="object-cover w-10 h-10 rounded-full">
         <div class="grow">
-          <NuxtLink :to="`wall/${user.id}`" class="bolck font-bold hover:text-primary hover:underline hover:underline-offset-2">{{ user.name }}</NuxtLink>
+          <NuxtLink :to="`/wall`" class="bolck font-bold hover:text-primary hover:underline hover:underline-offset-2">{{ user.name }}</NuxtLink>
           <div class="flex justify-between text-sm flex-col sm:flex-row">
             <div class="text-dark-gray">追蹤時間：<span v-timeformat="user.createdAt *1000"></span></div>
             <div>您已追蹤 <span>{{ Math.floor((Date.now()/1000- user.createdAt)/(60*60*24))}}</span> 天！</div>

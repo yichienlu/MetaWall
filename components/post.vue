@@ -16,12 +16,12 @@ watchEffect(() => post)
 <template>
   <div class="bg-white rounded-lg p-6 border-2 border-dark shadow-[0_3px_0_0_#000400]">
     <div class="flex">
-      <NuxtLink :to="`/wall/${post.user._id}`">
+      <NuxtLink :to="`/wall`">
         <img :src="post.user.photo" alt="" class="object-cover w-12 h-12 rounded-full mr-4 border-2 border-dark hover:border-primary">
       </NuxtLink>
       <div>
-        <NuxtLink :to="`/wall/${post.user._id}`" class="font-bold hover:text-primary">{{ post.user.name }}</NuxtLink>
-        <NuxtLink :to="`/post/${post.id}`">
+        <NuxtLink :to="`/wall`" class="font-bold hover:text-primary">{{ post.user.name }}</NuxtLink>
+        <NuxtLink>
           <div class="text-12 text-dark-gray hover:underline" v-timeformat="new Date(post.createdAt).getTime() ">{{ post.createdAt }}</div>
         </NuxtLink>
       </div>
@@ -40,7 +40,7 @@ watchEffect(() => post)
         </div>
       </div> -->
     </div>
-    
+
     <!-- <div class="flex items-center gap-2 mt-4">
       <img :src="post.userImg" alt="" class="hidden md:block object-cover w-10 h-10 rounded-full border-2 border-dark">
       <div class="flex grow border-2 border-dark">
