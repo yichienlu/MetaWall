@@ -2,6 +2,9 @@
   useHead({
     title: "張貼動態"
   })
+
+
+  
 </script>
 <template>
   <div>
@@ -12,7 +15,10 @@
     <div class="p-8 rounded-lg border-2 border-dark bg-white mt-4">
       <label for="postTextarea" class="block mb-1">貼文內容</label>
       <textarea name="" id="postTextarea" cols="30" rows="10" class="block w-full border-2 border-dark px-4 py-3" placeholder="輸入您的貼文內容"></textarea>
-      <div class="my-4"><button class="py-1 px-8 rounded  btn-2d-dark">上傳圖片</button></div>
+      <div class="my-4">
+        <!-- <button class="py-1 px-8 rounded  btn-2d-dark">上傳圖片</button> -->
+        <input type="text" class="py-2 px-8 rounded border-2 border-dark w-full" placeholder="請輸入圖片 URL">
+      </div>
       <div class="mb-8"><img src="https://picsum.photos/1050/300" alt="" class="rounded-lg border-2 border-dark"></div>
       <ul class="mb-4 text-center text-danger text-sm">
         <li>圖片檔案過大，僅限 1mb 以下檔案</li>

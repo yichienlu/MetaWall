@@ -19,9 +19,9 @@ body {
   linear-gradient(to right, theme("colors.background-grid") 1px, theme("colors.background") 1px);
   background-size: 50px 50px;
 }
-*{
+/* *{
   outline: 1px solid #F50
-}
+} */
 
 .btn-3d {
   @apply py-4 font-bold bg-primary hover:bg-bright hover:text-dark text-white border-2 border-dark rounded-lg shadow-[-2px_2px_0px_0px_#000400] active:shadow-none active:-translate-x-0.5 active:translate-y-0.5
