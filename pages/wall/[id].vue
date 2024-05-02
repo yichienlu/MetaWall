@@ -1,20 +1,25 @@
 <script setup>
 
 const profile = {
-  id:"123",
-  name:"邊緣小杰",
-  userImg:"https://randomuser.me/api/portraits/men/15.jpg",
+  _id:"123",
+  user:{
+    _id:"123",
+    name:"邊緣小杰",
+    photo:"https://randomuser.me/api/portraits/men/15.jpg"
+  },
   followers:87000,
   followed:true,
   posts:[
     {
       id:"123",
-      userId:"123",
-      name:"邊緣小杰",
-      userImg:"https://randomuser.me/api/portraits/men/15.jpg",
-      createdAt:1700000000,
+      user:{
+        _id:"123",
+        name:"邊緣小杰",
+        photo:"https://randomuser.me/api/portraits/men/15.jpg"
+      },
+      createdAt:1700000000000,
       content:"<p>外面看起來就超冷....</p><p>我決定回被窩繼續睡....</p>",
-      postImg:"https://picsum.photos/500/300",
+      image:"https://picsum.photos/500/300",
       // likes:[
       //   {userId:123,name:'邊緣小杰邊緣小杰邊緣小杰邊緣小杰邊緣小杰邊緣小杰邊緣小杰邊緣小杰邊緣小杰邊緣小杰邊緣小杰邊緣小杰邊緣小杰'},
       //   {userId:123,name:'邊緣小杰'},
@@ -54,7 +59,7 @@ const profile = {
 }
 
 useHead({
-    title: `${profile.name}`
+    title: `${profile.user.name}`
   })
 </script>
 
@@ -62,10 +67,10 @@ useHead({
   <div class="flex flex-col gap-4">
     <div class="relative right-1 top-1 border-2 border-dark bg-white rounded-lg">
       <div class="relative left-1 bottom-1  border-2 border-dark bg-white rounded-lg flex">
-        <img :src="profile.userImg" alt="" class="object-cover w-20 rounded-l-lg border-r-2 border-dark">
+        <img :src="profile.user.photo" alt="" class="object-cover w-20 rounded-l-lg border-r-2 border-dark">
         <div class="flex gap-2 items-center grow justify-between px-4 py-3">
           <div class="">
-            <h2 class="font-bold">{{ profile.name }}</h2>
+            <h2 class="font-bold">{{ profile.user.name }}</h2>
             <div>{{ profile.followers.toLocaleString() }} 人追蹤</div>
           </div>
           <button v-if="profile.followed" class="h-9 px-3 sm:px-8 btn-3d-gray">取消追蹤</button>
